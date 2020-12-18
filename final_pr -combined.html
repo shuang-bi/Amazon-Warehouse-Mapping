@@ -52,7 +52,7 @@
       #intro {
         position: absolute;
         left: 0;
-        bottom: 45px;
+        bottom: 35px;
         width: 425px;
         z-index: 2;
         padding: 5px;
@@ -143,15 +143,16 @@
         fill-opacity: 0.75;
         margin-bottom: 5px; 
       }
+
       .colors1 {
-        background: linear-gradient(to right,#fdf2e9,#fae5d3,#f5cba7,#f0b27a,#e67e22,#e67e22,#ca6f1e,#af601a,#935116,#784212);
+        background: linear-gradient(to right,#55552b,#888844,#bbbb77,#ddddbb,#ffffff,#f0b27a,#df9f9f,#c65353,#993333,#602020);
         fill-opacity: 0.75;
         margin-bottom: 5px; 
       }
 
 
       .label1 {
-        width: 9%;
+        width: 8%;
         display: inline-block;
         text-align: center;
         font-size: small;
@@ -185,20 +186,21 @@
 
     
     <div class='map-overlay2' id='legend'> 
-        <p style = 'margin-top: 0; font-size:1em'> Socio-econ Indicator in 2018 SVI</p>
+        <p style = 'margin-top: 0; font-size:1em'> Percentile Ranking of Socio-econ Indicator in 2018 SVI Data</p>
 
         <div class='row colors1'></div>
         <div class='row labels'>
            <div class = 'label1'>0</div>
-           <div class = 'label1'>0.33</div>
-           <div class = 'label1'>0.66</div>
-           <div class = 'label1'>1</div>
-           <div class = 'label1'>1.33</div>
-           <div class = 'label1'>1.66</div>
-           <div class = 'label1'>2</div>
-           <div class = 'label1'>2.33</div>
-           <div class = 'label1'>2.66</div>
-           <div class = 'label1'>3</div>
+           <div class = 'label1'>10%</div>
+           <div class = 'label1'>20%</div>
+           <div class = 'label1'>30%</div>
+           <div class = 'label1'>40%</div>
+           <div class = 'label1'>50%</div>
+           <div class = 'label1'>60%</div>
+           <div class = 'label1'>70%</div>
+           <div class = 'label1'>80%</div>
+           <div class = 'label1'>90%</div>
+           <div class = 'label1'>100%</div>
         </div>
 
       <p style = 'margin-top: 3; font-size:1em'>Percentage Change of Socio-econ Indicator from 2014 to 2018</p>
@@ -217,6 +219,7 @@
          <div class = 'label2'>40%</div>
          <div class = 'label2'>50%</div>
       </div>
+      <p style="font-size:0.8 em;font-style: italic">Indicator = EPL_POV + EPL_UNEMP + EPL_PCI + EPL_NOHSDP</p>
 
   </div>
     <div id="intro">
@@ -224,10 +227,9 @@
         <h3>Counties With Amazon Warehouses</h3>
         <h5><em>by Jacob Hu | Shuang Bi | Yuan Li</em></h5>
         <p>When everything came to a halt during this pandemic, Amazon speeded up its operation...<br>
-            The company refused to shut down their facilities or to acknowledge the full impact of COVID-19 on its workers.
-            Instead, it has kept on expanding its logistic networks, taking advantage of the economic desperation caused by COVID to increase its market power and dominance.<br>
-            By 2021, there will be 498 Amazon warehouses in the U.S., across 204 counties and 42 states.<br>
-            We mapped out the sociol economic indicator from SVI data in counties with Amazon warehouses to see what has changed from 2014 to 2018...
+            The company refused to shut down their facilities and has kept on expanding its logistic networks, taking advantage of the economic desperation caused by COVID to increase its market dominance.<br>
+            By 2021, there will be <b>498</b> Amazon warehouses in the U.S., across <b>204</b> counties and <b>42</b> states.<br>
+            Here we mapped out the sociol economic indicator from <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/index.html">CDC SVI data </a>in counties with Amazon warehouses to see its changes from 2014 to 2018...
         </p>
         <hr>
         <p><b>To get started, please use the toggle menu above.<b></p>
@@ -281,11 +283,11 @@
               0.2,
               '#bbbb77',
               0.3,
-              '#f0b27a',
-              0.4,
               '#ddddbb',
-              0.5,
+              0.4,
               '#ffffff',
+              0.5,
+              '#f0b27a',
               0.6,
               '#df9f9f',
               0.7,
@@ -318,11 +320,11 @@
               0.2,
               '#bbbb77',
               0.3,
-              '#f0b27a',
-              0.4,
               '#ddddbb',
-              0.5,
+              0.4,
               '#ffffff',
+              0.5,
+              '#f0b27a',
               0.6,
               '#df9f9f',
               0.7,
@@ -388,7 +390,7 @@
             'fill-color': [
               'interpolate',
               ['linear'],
-              ['get', 'amzfilter_SPL_THEME4_2'],
+              ['get', 'amzfilter_RPL_THEME1_3'],
               -0.5,
             '#1e8449',
             -0.4,
@@ -431,7 +433,7 @@
             'fill-color': [
               'interpolate',
               ['linear'],
-              ['get', 'amzfilter_SPL_THEME4_2'],
+              ['get', 'amzfilter_RPL_THEME1_3'],
               -0.5,
             '#1e8449',
             -0.4,
@@ -474,7 +476,7 @@
             'fill-color': [
               'interpolate',
               ['linear'],
-              ['get', 'amzfilter_SPL_THEME4_2'],
+              ['get', 'amzfilter_RPL_THEME1_3'],
               -0.5,
             '#1e8449',
             -0.4,
@@ -514,7 +516,7 @@
             'fill-color': [
               'interpolate',
               ['linear'],
-              ['get', 'amzfilter_SPL_THEME4_2'],
+              ['get', 'amzfilter_RPL_THEME1_3'],
               -0.5,
             '#1e8449',
             -0.4,
@@ -610,7 +612,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML((e.features[0].properties.amzfilter_SPL_THEME4).toFixed(4)*100+'%')
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME4_1).toFixed(4)*100+'%')
           .addTo(map);
         });
 
@@ -622,7 +624,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.amzfilter_SPL_THEME4_1)
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME4_1).toFixed(4)*100+'%')
           .addTo(map);
         });
 
@@ -635,7 +637,7 @@
           var p = e.features[0].properties;
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML((p.amzfilter_SPL_THEME4_2).toFixed(4)*100 + '% Change')
+          .setHTML((p.amzfilter_RPL_THEME1_3).toFixed(4)*100 + '% Change')
           .addTo(map);
         });
 
@@ -648,7 +650,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.amzfilter_SPL_THEME4_2 + ' Change')
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME1_3).toFixed(4)*100 + '% Change')
           .addTo(map);
         });
         map.on('click', 'Small Metro', function(e) {
@@ -659,7 +661,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.amzfilter_SPL_THEME4_2 + ' Change')
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME1_3).toFixed(4)*100 + '% Change')
           .addTo(map);
         });
         map.on('click', 'Medium Metro', function(e) {
@@ -670,7 +672,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.amzfilter_SPL_THEME4_2 + ' Change')
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME1_3).toFixed(4)*100 + '% Change')
           .addTo(map);
         });
         map.on('click', 'Large Metro', function(e) {
@@ -681,7 +683,7 @@
           document.getElementById('intro').style.visibility = "hidden";
           new mapboxgl.Popup()
           .setLngLat(e.lngLat)
-          .setHTML(e.features[0].properties.amzfilter_SPL_THEME4_2 + ' Change')
+          .setHTML((e.features[0].properties.amzfilter_RPL_THEME1_3).toFixed(4)*100 + '% Change')
           .addTo(map);
         });
 
